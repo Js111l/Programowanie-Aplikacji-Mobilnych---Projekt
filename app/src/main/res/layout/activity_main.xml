@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/showAllCryptoListButton"
+        android:layout_width="108dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/currencySearch"
+        android:layout_alignEnd="@+id/currencySearch"
+        android:layout_alignBottom="@+id/currencySearch"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="-81dp"
+        android:text="All "
+        app:backgroundTint="#FFEB3B" />
+
+    <EditText
+        android:id="@+id/currencySearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="auto"
+        android:hint="Type Currency Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/currencyRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="806dp"
+        android:layout_below="@id/currencySearch"
+        android:layout_marginTop="90dp"
+        tools:listitem="@layout/crypto_item" />
+
+    <Button
+        android:id="@+id/favoriteButton"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currencySearch"
+        android:layout_alignEnd="@+id/currencySearch"
+        android:layout_alignBottom="@+id/currencySearch"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="-81dp"
+        android:text="Favorites"
+        app:backgroundTint="#E91E63" />
+
+
+</RelativeLayout>
